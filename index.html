@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <style type="text/tailwindcss">
 
         @theme{
@@ -87,15 +88,12 @@
             --text-preset-6--font-style:    italic;
             --text-preset-6--letter-spacing: 0px;
             /*TEXT PRESET 2 MOBILE MEDIUM*/
-            --text-preset-2-mobile-medium: 40px;
+            --text-preset-2-mobile: 40px;
             --text-preset-2-mobile-medium--line-height: 100%;
             --text-preset-2-mobile-medium--font-weight: 500;
-            --text-preset-2-mobile-medium--letter-spacing: 0px;
             /*TEXT PRESET 2 MOBILE LIGHT*/
-            --text-preset-2-mobile-light: 40px;
+            --text-preset-2-mobile: 40px;
             --text-preset-2-mobile-light--line-height: 100%;
-            --text-preset-2-mobile-light--font-weight: 300;
-            --text-preset-2-mobile-light--letter-spacing: 0px;
             /*TEXT PRESET 3 MOBILE*/
             --text-preset-3-mobile: 20px;
             --text-preset-3-mobile--line-height: 120%;
@@ -114,8 +112,25 @@
             --text-preset-5-mobile--letter-spacing: 0px;
         }
     </style>
+</head>
 
-</head>  
-<body>
-</body> 
-</html> 
+<body class="bg-Blue-900">
+    <main>
+        <div class="flex justify-end gap-[8px] pr-[24px] pt-[28px]">
+            <img src="./images/icon-1.png" alt="icon-led">
+            <div class="rounded-[9px] bg-purple-600 w-[32px] h-[20px] flex items-center justify-end pr-[4px]">
+                <div class="w-[12px] h-[12px] bg-white rounded-full"></div>
+            </div>
+            <img src="./images/icon-2.png" alt="icon-led-2">
+        </div>
+        <section class="container my-[0px] mx-auto">
+            <div class="pt-[32px] mx-[24px]">
+                <h2 class="font-rubik font-light text-white text-preset-2-mobile">Welcome to the</h2>
+                <h1 class="font-rubik text-preset-2-mobile text-white">Frontend Quiz!</h1>
+                <span class="font-rubik text-preset-5-mobile text-Blue-300">Pick a subject to get started.</span>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
