@@ -48,112 +48,112 @@
             /* TEXT PRESET 1 */
             --text-preset-1:  144px;
             --text-preset-1--line-height:   100%;
-            --text-preset-1--font-weight:   500;
-            --text-preset-1--letter-spacing: 0px;
             /* text size */
             /* TEXT PRESET 2 — MEDIUM */
             --text-preset-2-medium:                64px;
             --text-preset-2-medium--line-height:   100%;
-            --text-preset-2-medium--font-weight:   500;
-            --text-preset-2-medium--letter-spacing: 0px;
             /* TEXT PRESET 2 — LIGHT */
             --text-preset-2-light:                64px;
             --text-preset-2-light--line-height:   100%;
-            --text-preset-2-light--font-weight:   300;
-            --text-preset-2-light--letter-spacing: 0px;
             /* TEXT PRESET 3 */
             --text-preset-3:                36px;
             --text-preset-3--line-height:   120%;
-            --text-preset-3--font-weight:   500;
-            --text-preset-3--letter-spacing: 0px;
             /* TEXT PRESET 4 */
             --text-preset-4:                28px;
             --text-preset-4--line-height:   100%;
-            --text-preset-4--font-weight:   500;
-            --text-preset-4--letter-spacing: 0px;
             /* TEXT PRESET 5 — MEDIUM */
             --text-preset-5-medium:                24px;
             --text-preset-5-medium--line-height:   150%;
-            --text-preset-5-medium--font-weight:   500;
-            --text-preset-5-medium--letter-spacing: 0px;
             /* TEXT PRESET 5 — REGULAR */
             --text-preset-5-regular:                24px;
             --text-preset-5-regular--line-height:   150%;
-            --text-preset-5-regular--font-weight:   400;
-            --text-preset-5-regular--letter-spacing: 0px;
             /* TEXT PRESET 6 — ITALIC */
             --text-preset-6:                20px;
             --text-preset-6--line-height:   150%;
-            --text-preset-6--font-weight:   400;
-            --text-preset-6--font-style:    italic;
-            --text-preset-6--letter-spacing: 0px;
             /*TEXT PRESET 2 MOBILE MEDIUM*/
             --text-preset-2-mobile: 40px;
             --text-preset-2-mobile-medium--line-height: 100%;
-            --text-preset-2-mobile-medium--font-weight: 500;
-            /*TEXT PRESET 2 MOBILE LIGHT*/
-            --text-preset-2-mobile: 40px;
-            --text-preset-2-mobile-light--line-height: 100%;
             /*TEXT PRESET 3 MOBILE*/
             --text-preset-3-mobile: 20px;
             --text-preset-3-mobile--line-height: 120%;
-            --text-preset-3-mobile--font-weight: 500;
-            --text-preset-3-mobile--letter-spacing: 0px;
             /*TEXT PRESET 4 MOBILE*/
             --text-preset-4-mobile: 18px;
             --text-preset-4-mobile--line-height: 100%;
-            --text-preset-4-mobile--font-weight: 500;
-            --text-preset-4-mobile--letter-spacing: 0px;
             /*TEXT PRESET 5 MOBILE*/
             --text-preset-5-mobile: 14px;
             --text-preset-5-mobile--line-height: 150%;
-            --text-preset-5-mobile--font-weight: 400;
-            --text-preset-5-mobile--font-style: italic;
-            --text-preset-5-mobile--letter-spacing: 0px;
         }
     </style>
 </head>
 
 <body class="bg-Blue-900">
-    <header>
-        <div class="flex justify-end gap-[8px] pr-[24px] pt-[28px]">
+    <!-- mobile path -->
+    <img src="./images/path.svg" alt="path" class="absolute z-0 top md:hidden lg-hidden">
+    <!-- tablet designe -->
+    <img src="./images/path-2.svg" alt="path-tablet" class="hidden md:block md:absolute md:z-0 md:top-[-150px]">
+    <!-- daskctop designe -->
+    <img src="./images/path-3.png" alt="path-desktop" class="hidden lg:block lg:absolute lg:z-0 lg:bottom-0 lg:right-0">
+    <main class="relative z-10">
+        <!-- mobile designe -->
+        <div class="flex justify-end gap-[8px] pr-[24px] pt-[28px] md:hidden">
             <img src="./images/icon-1.png" alt="icon-led">
             <div class="rounded-[9px] bg-purple-600 w-[32px] h-[20px] flex items-center justify-end pr-[4px]">
                 <div class="w-[12px] h-[12px] bg-white rounded-full"></div>
             </div>
             <img src="./images/icon-2.png" alt="icon-led-2">
         </div>
-    </header>
-    <main>
-        <section class="container my-[0px] mx-auto">
+        <!-- tablet designe -->
+        <div class="hidden md:flex md:justify-end md:gap-[8px] md:pr-[24px] pt-[28px] md:block">
+            <img src="./images/icon-tablet.png" alt="icon-led">
+            <div class="rounded-full bg-purple-600 w-[48px] h-[28px] flex items-center justify-end px-[4px]">
+                <div class="w-[20px] h-[20px] bg-white rounded-full"></div>
+            </div>
+            <img src="./images/icon-tablet-2.png" alt="icon-led-2">
+        </div>
+        <section class="container my-[0px] mx-auto lg:flex lg:flex-2">
             <div class="pt-[32px] mx-[24px]">
-                <h2 class="font-rubik font-light text-white text-preset-2-mobile">Welcome to the</h2>
-                <h1 class="font-rubik text-preset-2-mobile text-white">Frontend Quiz!</h1>
-                <span class="font-rubik text-preset-5-mobile text-Blue-300">Pick a subject to get started.</span>
+                <h2 class="font-rubik font-light text-white text-preset-2-mobile-2 md:text-preset-2-light">Welcome to the</h2>
+                <h1 class="font-rubik text-preset-2-mobile text-white font-medium md:text-preset-2-medium">Frontend Quiz!</h1>
+                <span class="font-rubik text-preset-5-mobile text-Blue-300 md:-preset-6">Pick a subject to get started.</span>
+            </div>
+            <div class="flex flex-col mx-[40px] mt-[40px] gap-3 md:flex-1 md:gap-4">
+                <button
+                    class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:translate-y-1 md:p-4">
+                    <div
+                        class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
+                        <img src="./images/icon-html.png" alt="icon-html">
+                    </div>
+                    <span class="text-preset-4-mobile font-medium text-white font-rubik">HTML</span>
+                </button>
+
+                <button
+                    class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
+                    <div
+                        class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
+                        <img src="images/icon-css.png" alt="icon-css">
+                    </div>
+                    <span class="text-preset-4-mobile font-medium text-white font-rubik">CSS</span>
+                </button>
+
+                <button
+                    class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
+                    <div
+                        class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
+                        <img src="images/icon-js.png" alt="icon-js">
+                    </div>
+                    <span class="text-preset-4-mobile font-rubik font-medium text-white">Javascript</span>
+                </button>
+
+                <button
+                    class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
+                    <div
+                        class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
+                        <img src="./images/icon_accessibility.png" alt="icon-acces">
+                    </div>
+                    <span class="text-preset-4-mobile font-medium text-white font-rubik">Accessibility</span>
+                </button>
             </div>
         </section>
-
-        <div class="flex flex-col gap-3 md:flex-1 md:gap-4">
-            <button class="flex items-center gap-4 bg-Blue-900 hover:bg-Blue-850 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
-               <div class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 "> <img src="./images/icon-html.png" alt=""></div>
-               <span class="text-preset-4-mobile font-medium md:text-preset-4">HTML</span>
-            </button>
-
-            <button class="flex items-center gap-4 bg-Blue-900 hover:bg-Blue-850 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
-               <div class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 "> <img src="images/icon-css.png" alt=""></div>
-               <span class="text-preset-4-mobile font-medium md:text-preset-4">css</span>
-            </button>
-
-            <button class="flex items-center gap-4 bg-Blue-900 hover:bg-Blue-850 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
-               <div class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 "> <img src="images/icon-js.png" alt=""></div>
-               <span class="text-preset-4-mobile font-medium md:text-preset-4">Javascript</span>
-            </button>
-
-            <button class="flex items-center gap-4 bg-Blue-900 hover:bg-Blue-850 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
-               <div class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 "> <img src="images/icon_accessibility.png" alt=""></div>
-               <span class="text-preset-4-mobile font-medium md:text-preset-4">Accessibility</span>
-            </button>
-        </div>
     </main>
 </body>
 
