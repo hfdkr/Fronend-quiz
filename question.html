@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style type="text/tailwindcss">
+
+        @theme{
+            /* colors  */
+            --color-White: #FFFFFF;
+            --color-black: #000000;
+            --color-Grey-500: #626C7F;
+            --color-Grey-50: #F4F6FA;
+            --color-Blue-950: #2D3949;
+            --color-Blue-900: #313E51;
+            --color-Blue-850: #3B4D66;
+            --color-Blue-500: #306AFF;
+            --color-Blue-300: #ABC1E1;
+            --color-Blue-100: #EDF1F9;
+            --color-Blue-50: #EBF0FF;
+            --color-Green-500: #2FD887;
+            --color-Green-100: #E0FDEF;
+            --color-Purple-600: #A729F5;
+            --color-Purple-100: #F6E7FF;
+            --color-Orange-400: #FF7E35;
+            --color-Orange-50: #FFF5ED;
+            --color-red-500: #EE5454;
+            /* fonts */
+            --font-rubik: "Rubik", sans-serif;
+            /* Spacing */
+            --spacing-100: 8px;
+            --spacing-200: 16px;
+            --spacing-300: 24px;
+            --spacing-400: 32px;
+            --spacing-500: 40px;
+            --spacing-600: 48px;
+            --spacing-800: 64px;
+            --spacing-1600: 128px;
+            --spacing-1800: 144px;
+            --spacing-2300: 184px;
+            /* TEXT PRESET 1 */
+            --text-preset-1:  144px;
+            --text-preset-1--line-height:   100%;
+            /* text size */
+            /* TEXT PRESET 2 — MEDIUM */
+            --text-preset-2-medium:                64px;
+            --text-preset-2-medium--line-height:   100%;
+            /* TEXT PRESET 2 — LIGHT */
+            --text-preset-2-light:                64px;
+            --text-preset-2-light--line-height:   100%;
+            /* TEXT PRESET 3 */
+            --text-preset-3:                36px;
+            --text-preset-3--line-height:   120%;
+            /* TEXT PRESET 4 */
+            --text-preset-4:                28px;
+            --text-preset-4--line-height:   100%;
+            /* TEXT PRESET 5 — MEDIUM */
+            --text-preset-5-medium:                24px;
+            --text-preset-5-medium--line-height:   150%;
+            /* TEXT PRESET 5 — REGULAR */
+            --text-preset-5-regular:                24px;
+            --text-preset-5-regular--line-height:   150%;
+            /* TEXT PRESET 6 — ITALIC */
+            --text-preset-6:                20px;
+            --text-preset-6--line-height:   150%;
+            /*TEXT PRESET 2 MOBILE MEDIUM*/
+            --text-preset-2-mobile: 40px;
+            --text-preset-2-mobile-medium--line-height: 100%;
+            /*TEXT PRESET 3 MOBILE*/
+            --text-preset-3-mobile: 20px;
+            --text-preset-3-mobile--line-height: 120%;
+            /*TEXT PRESET 4 MOBILE*/
+            --text-preset-4-mobile: 18px;
+            --text-preset-4-mobile--line-height: 100%;
+            /*TEXT PRESET 5 MOBILE*/
+            --text-preset-5-mobile: 14px;
+            --text-preset-5-mobile--line-height: 150%;
+        }
+    </style>
+</head>
+<body class="bg-Blue-900">
+    <main > 
+        <div class="flex flex-col gap-200">
+          <p class="text-[20px] leading-[150%] font-normal italic dark:text-Blue-300 text-Grey-500">
+            Question 1 of 10
+          </p>
+          <h2  class="text-[36px] font-medium leading-[120%] dark:text-White text-Blue-900">
+            Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?
+          </h2>
+        </div>
+ 
+        <div class="flex flex-col gap-200">
+ 
+          <button
+            class="flex items-center gap-300 rounded-2xl px-300 py-200 border-[3px] border-transparent
+                   dark:bg-Blue-850 bg-White shadow-md cursor-pointer transition-all duration-200
+                   hover:border-Purple-600 text-left w-full">
+            <div  class="w-14 h-14 rounded-xl dark:bg-Blue-100 bg-Grey-50 dark:text-Blue-900 text-Grey-500
+                                  text-[24px] font-medium grid place-items-center shrink-0 transition-all duration-200">A</div>
+            <span class="flex-1 text-[24px] font-medium leading-[150%] dark:text-White text-Blue-900"></span>
+            <span  class="text-xl w-6 text-center shrink-0 text-white">4.5:1</span>
+          </button>
+ 
+          <button 
+            class="flex items-center gap-300 rounded-2xl px-300 py-200 border-[3px] border-transparent
+                   dark:bg-Blue-850 bg-White shadow-md cursor-pointer transition-all duration-200
+                   hover:border-Purple-600 text-left w-full">
+            <div i class="w-14 h-14 rounded-xl dark:bg-Blue-100 bg-Grey-50 dark:text-Blue-900 text-Grey-500
+                                  text-[24px] font-medium grid place-items-center shrink-0 transition-all duration-200">B</div>
+            <span class="flex-1 text-[24px] font-medium leading-[150%] dark:text-White text-Blue-900"></span>
+            <span   class="text-xl w-6 text-center shrink-0 text-white">3:1</span>
+          </button>
+ 
+          <button 
+            class="flex items-center gap-300 rounded-2xl px-300 py-200 border-[3px] border-transparent
+                   dark:bg-Blue-850 bg-White shadow-md cursor-pointer transition-all duration-200
+                   hover:border-Purple-600 text-left w-full">
+            <div  class="w-14 h-14 rounded-xl dark:bg-Blue-100 bg-Grey-50 dark:text-Blue-900 text-Grey-500
+                                  text-[24px] font-medium grid place-items-center shrink-0 transition-all duration-200">C</div>
+            <span class="flex-1 text-[24px] font-medium leading-[150%] dark:text-White text-Blue-900"></span>
+            <span   class="text-xl w-6 text-center shrink-0 text-white">2.5:1</span>
+          </button>
+ 
+          <button 
+            class="flex items-center gap-300 rounded-2xl px-300 py-200 border-[3px] border-transparent
+                   dark:bg-Blue-850 bg-White shadow-md cursor-pointer transition-all duration-200
+                   hover:border-Purple-600 text-left w-full">
+            <div class="w-14 h-14 rounded-xl dark:bg-Blue-100 bg-Grey-50 dark:text-Blue-900 text-Grey-500
+                                  text-[24px] font-medium grid place-items-center shrink-0 transition-all duration-200">D</div>
+            <span  class="flex-1 text-[24px] font-medium leading-[150%] dark:text-White text-Blue-900"></span>
+            <span  class="text-xl w-6 text-center shrink-0 text-white">5:1</span>
+          </button>
+ 
+          
+ 
+          <button
+            class="mt-100 w-full bg-Purple-600 text-White rounded-2xl py-300
+                   text-[24px] font-medium leading-[150%] border-none cursor-pointer
+                   transition-opacity duration-200 hover:opacity-90 disabled:opacity-35 disabled:cursor-default">
+            Submit Answer
+          </button>
+ 
+        </div>
+  </main>
+</body>
+</html>
