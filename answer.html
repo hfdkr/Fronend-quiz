@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz app - question</title>
+    <title>quiz app - score</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <style type="text/tailwindcss">
+
         @theme{
             /* colors  */
             --color-White: #FFFFFF;
@@ -85,9 +86,11 @@
 </head>
 
 <body class="bg-Blue-900 font-rubik min-h-screen overflow-hidden">
+
     <main class="relative z-10 min-h-screen flex flex-col px-[24px] pt-[28px] md:px-[64px] lg:px-[140px]">
 
         <header class="flex items-center justify-between mb-[40px] md:mb-[64px] lg:mb-[80px]">
+
             <div class="flex items-center gap-[16px]">
                 <div
                     class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
@@ -106,93 +109,51 @@
                 <img src="./images/icon-2.png" alt="icon-moon" class="md:hidden">
                 <img src="./images/icon-tablet-2.png" alt="icon-moon-tablet" class="hidden md:block">
             </div>
+
         </header>
 
-       <section class="flex flex-col gap-[40px] lg:flex-row lg:items-start lg:gap-[64px] flex-1">
+        <section class="flex ">
 
-  <div class="flex flex-col gap-[24px] lg:flex-1 lg:max-w-[465px] lg:justify-between lg:min-h-[420px]">
-    <div>
-      <span id="questionNumber"
-        class="text-preset-6 italic text-Blue-300 font-light block mb-[12px] md:mb-[24px]">
-        Question 1 of 10
-      </span>
+            <div class="lg:flex-1">
+                <h2 class="font-light text-White text-preset-2-mobile md:text-preset-2-light leading-none">Quiz
+                    completed</h2>
+                <h1 class="font-bold text-White text-preset-2-mobile md:text-preset-2-medium leading-none">You scored...
+                </h1>
+            </div>
 
-      <h2 id="questionTitle"
-        class="text-preset-3-mobile md:text-preset-3 font-medium text-White leading-[120%]">
-        Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for
-        normal text?
-      </h2>
-    </div>
+            <div class="flex flex-col gap-[12px] md:gap-[16px] lg:flex-1">
 
-    <div class="w-full bg-Blue-850 rounded-full h-[16px] p-[4px]">
-      <div id="progressBar" class="bg-Purple-600 h-full rounded-full w-0 transition-all duration-300"></div>
-    </div>
-  </div>
+                <div
+                    class="bg-Blue-850 rounded-[24px] p-[24px] md:p-[48px] flex flex-col items-center gap-[12px] md:gap-[16px]">
 
-  <div class="flex flex-col gap-[12px] md:gap-[16px] lg:flex-1 pb-[24px]">
+                    <div class="flex items-center gap-[16px]">
+                        <div
+                            class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
+                            <img src="./images/icon_accessibility.png" alt="icon-accessibility"
+                                class="w-[24px] h-[24px] md:w-[32px] md:h-[32px]">
+                        </div>
+                        <span id="subjectName"
+                            class="text-preset-4-mobile md:text-preset-4 font-medium text-White">Accessibility</span>
+                    </div>
 
-    <button type="button"
-      class="answer-btn flex items-center gap-[16px] md:gap-[20px] bg-Blue-850 p-[12px] md:p-[16px] rounded-[16px] md:rounded-[24px] border-2 border-transparent w-full text-left"
-      data-index="0">
-      <div
-        class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Grey-50 rounded-[8px] flex items-center justify-center flex-shrink-0">
-        <span class="text-preset-4-mobile md:text-preset-4 font-medium text-Grey-500">A</span>
-      </div>
-      <span class="answer-text text-preset-4-mobile md:text-preset-4 font-medium text-White flex-1">
-        4.5 : 1
-      </span>
-      <span class="result-icon hidden text-white text-[24px] font-bold"></span>
-    </button>
+                    <span id="score" class="text-preset-1 font-bold text-White leading-none">0</span>
 
-    <button type="button"
-      class="answer-btn flex items-center gap-[16px] md:gap-[20px] bg-Blue-850 p-[12px] md:p-[16px] rounded-[16px] md:rounded-[24px] border-2 border-transparent w-full text-left"
-      data-index="1">
-      <div
-        class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Grey-50 rounded-[8px] flex items-center justify-center flex-shrink-0">
-        <span class="text-preset-4-mobile md:text-preset-4 font-medium text-Grey-500">B</span>
-      </div>
-      <span class="answer-text text-preset-4-mobile md:text-preset-4 font-medium text-White flex-1">
-        3 : 1
-      </span>
-      <span class="result-icon hidden text-white text-[24px] font-bold"></span>
-    </button>
+                    <span class="text-preset-5-mobile md:text-preset-5-regular text-Blue-300">out of 10</span>
 
-    <button type="button"
-      class="answer-btn flex items-center gap-[16px] md:gap-[20px] bg-Blue-850 p-[12px] md:p-[16px] rounded-[16px] md:rounded-[24px] border-2 border-transparent w-full text-left"
-      data-index="2">
-      <div
-        class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Grey-50 rounded-[8px] flex items-center justify-center flex-shrink-0">
-        <span class="text-preset-4-mobile md:text-preset-4 font-medium text-Grey-500">C</span>
-      </div>
-      <span class="answer-text text-preset-4-mobile md:text-preset-4 font-medium text-White flex-1">
-        2.5 : 1
-      </span>
-      <span class="result-icon hidden text-white text-[24px] font-bold"></span>
-    </button>
+                </div>
 
-    <button type="button"
-      class="answer-btn flex items-center gap-[16px] md:gap-[20px] bg-Blue-850 p-[12px] md:p-[16px] rounded-[16px] md:rounded-[24px] border-2 border-transparent w-full text-left"
-      data-index="3">
-      <div
-        class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Grey-50 rounded-[8px] flex items-center justify-center flex-shrink-0">
-        <span class="text-preset-4-mobile md:text-preset-4 font-medium text-Grey-500">D</span>
-      </div>
-      <span class="answer-text text-preset-4-mobile md:text-preset-4 font-medium text-White flex-1">
-        5 : 1
-      </span>
-      <span class="result-icon hidden text-white text-[24px] font-bold"></span>
-    </button>
+                <button id="playAgainBtn"
+                    class="w-full bg-Purple-600 hover:opacity-80 text-White font-bold text-preset-4-mobile md:text-preset-5-medium rounded-[24px] py-[20px] md:py-[24px] transition-all">
+                    Play Again
+                </button>
 
-    <button id="submitBtn" type="button"
-      class="w-full bg-Purple-600 hover:opacity-80 text-White font-bold text-preset-4-mobile md:text-preset-5-medium rounded-[24px] py-[20px] md:py-[24px] mt-[4px] transition-all">
-      Submit Answer
-    </button>
-   
-  </div>
-</section>
+            </div>
+
+        </section>
+
     </main>
 
-    <script src="/question.js"></script>
+    <script src="answer.js"></script>
 </body>
 
 </html>
