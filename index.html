@@ -86,7 +86,7 @@
     </style>
 </head>
 
-<body class="bg-Blue-900">
+<body class="index-page bg-Blue-900">
     <!-- mobile path -->
     <img src="./images/path.svg" alt="path" class="absolute z-0 top md:hidden lg-hidden">
     <!-- tablet designe -->
@@ -117,7 +117,7 @@
                 <span class="font-rubik text-preset-5-mobile text-Blue-300 md:-preset-6">Pick a subject to get started.</span>
             </div>
             <div class="flex flex-col mx-[40px] mt-[40px] gap-3 md:flex-1 md:gap-4">
-                <button
+                <button  onclick="changeCategory('html')"
                     class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:translate-y-1 md:p-4">
                     <div
                         class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
@@ -126,16 +126,16 @@
                     <span class="text-preset-4-mobile font-medium text-white font-rubik">HTML</span>
                 </button>
 
-                <button
+                <button onclick="changeCategory('css')"
                     class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
                     <div
                         class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
                         <img src="./images/icon-css.png" alt="icon-css">
                     </div>
-                    <span class="text-preset-4-mobile font-medium text-white font-rubik">CSS</span>
+                    <span  class="text-preset-4-mobile font-medium text-white font-rubik">CSS</span>
                 </button>
 
-                <button
+                <button onclick="changeCategory('js')"
                     class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
                     <div
                         class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">
@@ -144,7 +144,7 @@
                     <span class="text-preset-4-mobile font-rubik font-medium text-white">Javascript</span>
                 </button>
 
-                <button
+                <button onclick="changeCategory('accessibility')"
                     class="flex items-center gap-4 bg-Blue-850 hover:bg-Blue-900 p-3 rounded-2xl border-2 border-transparent hover:border-Purple-600 hover:-translate-y-1 md:p-4">
                     <div
                         class="w-10 h-10 bg-Orange-50 rounded-lg flex items-center justify-center font-bold text-Orange-400 text-xs flex-shrink-0 ">

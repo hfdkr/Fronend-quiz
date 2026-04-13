@@ -23,3 +23,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const subject = sessionStorage.getItem("quizSubject");
+
+const icon = document.getElementById("mainIcon_1");
+const title = document.getElementById("mainTitle_1");
+
+const data = {
+  HTML: {
+    img: "./images/icon-html.png",
+    name: "HTML",
+  },
+  CSS: {
+    img: "./images/icon-css.png",
+    name: "CSS",
+  },
+  JavaScript: {
+    img: "./images/icon-js.png",
+    name: "JavaScript",
+  },
+  Accessibility: {
+    img: "./images/icon_accessibility.png",
+    name: "Accessibility",
+  },
+};
+
+if (subject && data[subject]) {
+  icon.src = data[subject].img;
+  title.textContent = data[subject].name;
+}
