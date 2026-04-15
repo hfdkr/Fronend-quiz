@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("quizScore", "0");
       localStorage.setItem("quizCurrentQuestion", "0");
       localStorage.setItem("quizWon", "false");
-      window.location.href = "question.html";
+      window.location.href = "index.html";
     });
   }
 });
@@ -50,4 +50,31 @@ const data = {
 if (subject && data[subject]) {
   icon.src = data[subject].img;
   title.textContent = data[subject].name;
+}
+
+const icon_1 = document.getElementById("mainIcon_2");
+const title_1 = document.getElementById("mainTitle_2");
+
+const data_1 = {
+  HTML: {
+    img: "./images/icon-html.png",
+    name: "HTML",
+  },
+  CSS: {
+    img: "./images/icon-css.png",
+    name: "CSS",
+  },
+  JavaScript: {
+    img: "./images/icon-js.png",
+    name: "JavaScript",
+  },
+  Accessibility: {
+    img: "./images/icon_accessibility.png",
+    name: "Accessibility",
+  },
+};
+
+if (subject && data_1[subject]) {
+  icon_1.src = data_1[subject].img;
+  title_1.textContent = data_1[subject].name;
 }

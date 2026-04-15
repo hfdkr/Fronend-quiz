@@ -75,6 +75,7 @@ answerButtons.forEach((btn, index) => {
     btn.classList.add("border-Purple-600");
   });
 });
+/* dictionnaire question */
 document.addEventListener("DOMContentLoaded", () => {
   const questions = [
     {
@@ -258,8 +259,9 @@ document.addEventListener("DOMContentLoaded", () => {
           letterBox.classList.add("bg-Green-500");
         }
       }
-
+      /* border of question */
       if (index === selectedAnswer && index !== correctAnswer) {
+        /* add border red for my answer */
         btn.classList.add("border-red-500");
         icon.innerHTML =
           '<img src="./images/Vector(1).png" alt="close icon" width="30" height="30">';
