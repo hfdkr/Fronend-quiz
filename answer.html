@@ -87,18 +87,16 @@
 
 <body class="question-page-1 bg-Blue-900 font-rubik min-h-screen overflow-hidden">
     <img src="./images/path.svg" alt="path" class="absolute z-0 top md:hidden lg-hidden">
-    <!-- tablet designe -->
+    <!-- tablet -->
     <img src="./images/path-2.svg" alt="path-tablet" class="hidden md:block md:absolute md:z-0 md:top-[-150px]">
-    <!-- daskctop designe -->
+    <!-- desktop -->
     <img src="./images/path-3.png" alt="path-desktop" class="hidden lg:block lg:absolute lg:z-0 lg:bottom-0 lg:right-0">
 
     <main class="relative z-10 min-h-screen flex flex-col px-[24px] pt-[28px] md:px-[64px] lg:px-[140px]">
 
         <header class="flex items-center justify-between mb-[40px] md:mb-[64px] lg:mb-[80px]">
-
             <div class="flex items-center gap-[16px]">
-                <div
-                    class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
+                <div class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
                     <img id="mainIcon_1" src="./images/icon_accessibility.png" alt="icon" class="w-[24px] h-[24px] md:w-[32px] md:h-[32px]">
                 </div>
                 <span id="mainTitle_1" class="text-preset-4-mobile md:text-preset-4 font-medium text-White"></span>
@@ -106,41 +104,33 @@
             <div class="flex items-center gap-[8px] md:gap-[12px]">
                 <img src="./images/icon-1.png" alt="icon-sun" class="md:hidden">
                 <img src="./images/icon-tablet.png" alt="icon-sun-tablet" class="hidden md:block">
-                <div
-                    class="rounded-full bg-Purple-600 w-[32px] h-[20px] md:w-[48px] md:h-[28px] flex items-center justify-end px-[4px]">
+                <div class="rounded-full bg-Purple-600 w-[32px] h-[20px] md:w-[48px] md:h-[28px] flex items-center justify-end px-[4px]">
                     <div class="w-[12px] h-[12px] md:w-[20px] md:h-[20px] bg-White rounded-full"></div>
                 </div>
                 <img src="./images/icon-2.png" alt="icon-moon" class="md:hidden">
                 <img src="./images/icon-tablet-2.png" alt="icon-moon-tablet" class="hidden md:block">
             </div>
-
         </header>
 
-        <section class="flex ">
+        <section class="flex flex-col gap-[40px] md:gap-[48px] lg:flex-row lg:items-center lg:gap-[128px]">
 
             <div class="lg:flex-1">
-                <h2 class="font-light text-White text-preset-2-mobile md:text-preset-2-light leading-none">Quiz
-                    completed</h2>
-                <h1 class="font-bold text-White text-preset-2-mobile md:text-preset-2-medium leading-none">You scored...
-                </h1>
+                <h2 class="font-light text-White text-preset-2-mobile md:text-preset-2-light leading-none">Quiz completed</h2>
+                <h1 class="font-bold text-White text-preset-2-mobile md:text-preset-2-medium leading-none">You scored...</h1>
             </div>
 
             <div class="flex flex-col gap-[12px] md:gap-[16px] lg:flex-1">
 
-                <div
-                    class="bg-Blue-850 rounded-[24px] p-[24px] md:p-[48px] flex flex-col items-center gap-[12px] md:gap-[16px]">
+                <div class="bg-Blue-850 rounded-[24px] p-[24px] md:p-[48px] flex flex-col items-center gap-[12px] md:gap-[16px]">
 
                     <div class="flex items-center gap-[16px]">
-                        <div
-                            class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
-                            <img src="./images/icon_accessibility.png" alt="icon-accessibility"
-                                class="w-[24px] h-[24px] md:w-[32px] md:h-[32px]">
+                        <div class="w-[40px] h-[40px] md:w-[56px] md:h-[56px] bg-Purple-100 rounded-[8px] md:rounded-[12px] flex items-center justify-center flex-shrink-0">
+                            <img src="./images/icon_accessibility.png" alt="icon-accessibility" class="w-[24px] h-[24px] md:w-[32px] md:h-[32px]">
                         </div>
-                        <span id="subjectName"
-                            class="text-preset-4-mobile md:text-preset-4 font-medium text-White">Accessibility</span>
+                        <span id="subjectName" class="text-preset-4-mobile md:text-preset-4 font-medium text-White">Accessibility</span>
                     </div>
 
-                    <span id="score" class="text-preset-1 font-bold text-White leading-none">0</span>
+                    <span id="score" class="text-[88px] md:text-preset-1 font-bold text-White leading-none">0</span>
 
                     <span class="text-preset-5-mobile md:text-preset-5-regular text-Blue-300">out of 10</span>
 
