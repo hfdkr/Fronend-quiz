@@ -217,9 +217,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   submitBtn.addEventListener("click", () => {
+    const feedback = document.getElementById("feedback");
     if (selectedAnswer === null) {
-      alert("Please select an answer");
+      feedback.textContent = "Please select an answer";
+      feedback.classList.add("text-red-500"); // style (Tailwind)
       return;
+    } else {
+      feedback.textContent = ""; // clear message when valid
     }
 
     if (answered) return;

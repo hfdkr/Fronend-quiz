@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+/* first path icon */
 const subject = sessionStorage.getItem("quizSubject");
 
 const icon = document.getElementById("mainIcon_1");
@@ -51,7 +52,7 @@ if (subject && data[subject]) {
   icon.src = data[subject].img;
   title.textContent = data[subject].name;
 }
-
+/* second path icon */
 const icon_1 = document.getElementById("mainIcon_2");
 const title_1 = document.getElementById("mainTitle_2");
 
